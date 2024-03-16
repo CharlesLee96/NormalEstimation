@@ -1,1 +1,0 @@
-My training run for single-scale normal estimation.
