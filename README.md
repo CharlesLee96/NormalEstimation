@@ -1,33 +1,19 @@
-<!-- > AdaFit: Rethinking Learning-based Normal Estimation on Point Clouds<br>
-> Runsong Zhu, Yuan Liu, Zhen Dong, Tengping jiang, Yuan Wang, Wenping Wang, Bisheng Yang<br>
-> [Project Page](https://runsong123.github.io/AdaFit/)
 
-Under construction ... -->
-
-
-# AdaFit: Rethinking Learning-based Normal Estimation on Point Clouds (ICCV 2021 oral)
-
-**[Project Page](https://runsong123.github.io/AdaFit/) | [Arxiv](https://arxiv.org/abs/2108.05836) |  [Video](https://youtu.be/IEjB_ea7-KE) | [Poster](https://runsong123.github.io/AdaFit/media/AdaFit_poster.pdf) |**
-
-Runsong Zhu¹, Yuan Liu², Zhen Dong¹, Tengping jiang¹, Yuan Wang¹, Wenping Wang³, Bisheng Yang¹. 
-
-¹Wuhan University + ²The University of Hong Kong + ³Texas A&M University.
-
+# Multi-level Critical Point Awareness and Aggregation Network for Point Cloud Normal Estimation
 
 ## Requirements
 
 we conduct the experiment in the following setting:
 
-- Ubuntu 16.04 
-- CUDA 10.1 
-- Python v3.7 
-- Pytorch v1.4 & torchvision v0.5.0
-- matplotlib v2.2.4
-- numpy  v1.17.4
-- tensorboardX v1.9
-- scikit-learn v0.21.3
-- scipy v1.3.2
-- urllib3 v1.25.8
+- Ubuntu 18.04 
+- python==3.9.7 
+- torch==1.9.0+cu111
+- matplotlib==3.5.1
+- numpy==1.21.5
+- tensorboardX==2.2
+- scikit_learn==1.0.2
+- scipy==1.12.0
+
 
 
 ## How to use the code
@@ -35,32 +21,20 @@ we conduct the experiment in the following setting:
 
 ### Data praparation
 
-you need to download PCPNet dataset and place it in ```./data/```
-
-### single-scale AdaFit (Train + Test on PCPNet):
-
+you need to download PCPNet dataset by
 ```
-python run_AdaFit_single_experiment_single_scale.py
+python get_data.py
 ```
 
-Note that, the difference between single-scale verison of our AdaFit and DeepFit is the offset-learning part, which you only need to add the following code.:
+and place it in ```./Data/```
+
+you can also download PCPNet and SceneNN dataset from [here]((https://drive.google.com/drive/folders/1O606EGHrZaDnlOcH1iQD9GbHEINF2-ox?usp=sharing))
+
+### run (Train + Test on PCPNet):
 
 ```
-# parameter
-
-self.conv_bias = nn.Conv1d(128, 3, 1)
-
-# train /test 
-
-...
-bias =  self.conv_bias(x)
-bias[:,:,0] = 0
-points = points + bias
-...
-
+python run.py
 ```
-
-
 
 ### AdaFit (Train + Test on PCPNet):
 
