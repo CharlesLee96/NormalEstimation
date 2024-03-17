@@ -28,7 +28,7 @@ python get_data.py
 
 and place it in ```./Data/```
 
-you can also download PCPNet and SceneNN dataset from [here]((https://drive.google.com/drive/folders/1O606EGHrZaDnlOcH1iQD9GbHEINF2-ox?usp=sharing))
+you can also download PCPNet and SceneNN dataset from [here](https://drive.google.com/drive/folders/1O606EGHrZaDnlOcH1iQD9GbHEINF2-ox?usp=sharing)
 
 ### run (Train + Test on PCPNet):
 
@@ -46,9 +46,9 @@ python run_AdaFit_single_experiment_multi_scale.py
 
 
 ## Acknowledgement
-The code is heavily based on [DeepFit](https://github.com/sitzikbs/DeepFit).
+The code is heavily based on [DeepFit](https://github.com/sitzikbs/DeepFit) and [AdaFit](https://github.com/Runsong123/AdaFit).
 
-If you find our work useful in your research, please cite our paper. And please also cite the DeepFit paper.
+If you find our work useful in your research, please cite our paper. And please also cite the DeepFit and AdaFit paper.
 
 ```
 @article{zhu2021adafit,
