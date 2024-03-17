@@ -36,14 +36,21 @@ you can also download PCPNet and SceneNN dataset from [here](https://drive.googl
 python run.py
 ```
 
-### AdaFit (Train + Test on PCPNet):
-
-
+### Train
+you can train your own model by
 ```
-python run_AdaFit_single_experiment_multi_scale.py
+python train.py
 ```
 
+### Test
+our trained model is also provided in ```./log_ablation_noLw/test_GAB_RPE/```
+you can simply test it with
+```
+python test.py
+```
 
+### Evaluate
+run ```python evaluate.py``` to get the final results.
 
 ## Acknowledgement
 The code is heavily based on [DeepFit](https://github.com/sitzikbs/DeepFit) and [AdaFit](https://github.com/Runsong123/AdaFit).
