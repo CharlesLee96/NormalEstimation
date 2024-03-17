@@ -53,7 +53,7 @@ python test.py
 run ```python evaluate.py``` to get the final results.
 
 ## Acknowledgement
-The code is heavily based on [DeepFit](https://github.com/sitzikbs/DeepFit) and [AdaFit](https://github.com/Runsong123/AdaFit) [PointFormer](https://github.com/Yi-Jun-Chen/DuPMAM).
+The code is heavily based on [DeepFit](https://github.com/sitzikbs/DeepFit) , [AdaFit](https://github.com/Runsong123/AdaFit) and [PointFormer](https://github.com/Yi-Jun-Chen/DuPMAM).
 
 If you find our work useful in your research, please cite our paper. And please also cite the DeepFit and AdaFit paper.
 
