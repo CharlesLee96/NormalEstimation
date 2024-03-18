@@ -13,6 +13,7 @@ we conduct the experiment in the following setting:
 - tensorboardX==2.2
 - scikit_learn==1.0.2
 - scipy==1.12.0
+- pytorch3d==0.7.1
 
 
 
