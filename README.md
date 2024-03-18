@@ -29,7 +29,7 @@ python get_data.py
 
 and place it in ```./Data/```
 
-you can also download PCPNet and SceneNN dataset from [here](https://drive.google.com/drive/folders/1O606EGHrZaDnlOcH1iQD9GbHEINF2-ox?usp=sharing)
+you can also download PCPNet and SceneNN dataset from [here](https://drive.google.com/drive/folders/1eNpDh5ivE7Ap1HkqCMbRZpVKMQB1TQ6H?usp=share_link)
 
 ### run (Train + Test on PCPNet):
 
